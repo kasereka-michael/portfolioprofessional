@@ -32,7 +32,7 @@ const Hero = () => {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
           className="lg:w-1/2 flex flex-col items-start space-y-6"
         >
           <span className="text-sm font-semibold px-3 py-1 bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary rounded-full">
@@ -111,20 +111,20 @@ const Hero = () => {
         </motion.div>
         
         <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           className="lg:w-1/2 flex justify-center items-center"
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-500 rounded-full blur-3xl opacity-20 dark:opacity-30 animate-pulse"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-500 rounded-full blur-3xl opacity-20 dark:opacity-30 animate-pulse" style={{ animationDuration: '4s' }}></div>
             <img 
               src="https://images.unsplash.com/photo-1596075780750-81249df16d19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
               alt="John Doe" 
               className="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl"
             />
             <div className="absolute -bottom-4 -right-4 z-20 bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-lg flex items-center">
-              <span className="h-3 w-3 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+              <span className="h-3 w-3 bg-green-500 rounded-full mr-2 animate-pulse" style={{ animationDuration: '2s' }}></span>
               <span className="text-sm font-medium">Available for work</span>
             </div>
           </div>
@@ -134,16 +134,23 @@ const Hero = () => {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+        transition={{ duration: 0.5, delay: 1.2 }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
       >
-        <button 
+        <motion.button 
           onClick={() => scrollToSection("#about")} 
           className="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
           aria-label="Scroll to About section"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ 
+            repeat: Infinity, 
+            repeatType: "loop", 
+            duration: 2.5, 
+            ease: "easeInOut" 
+          }}
         >
           <FaChevronDown className="text-2xl" />
-        </button>
+        </motion.button>
       </motion.div>
     </section>
   );
