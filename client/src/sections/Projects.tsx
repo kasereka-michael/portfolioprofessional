@@ -34,36 +34,97 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="mb-10 flex flex-wrap justify-center gap-3">
-          {categories.map((category) => (
-            <Button
+        <motion.div 
+          className="mb-10 flex flex-wrap justify-center gap-3"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          {categories.map((category, index) => (
+            <motion.div
               key={category}
-              variant={filter === category ? "default" : "outline"}
-              onClick={() => setFilter(category)}
-              className="capitalize"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ 
+                duration: 0.4, 
+                delay: 0.2 + index * 0.07,
+                ease: "easeOut" 
+              }}
             >
-              {category}
-            </Button>
+              <Button
+                variant={filter === category ? "default" : "outline"}
+                onClick={() => setFilter(category)}
+                className={`capitalize transition-all duration-300 ${
+                  filter === category 
+                    ? "font-medium shadow-md" 
+                    : "hover:shadow-sm"
+                }`}
+              >
+                {category}
+              </Button>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
+          {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3 }}
-              className="bg-gray-50 dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ 
+                duration: 0.6, 
+                delay: index * 0.1, 
+                ease: "easeOut" 
+              }}
+              whileHover={{ 
+                y: -5,
+                transition: { duration: 0.2 }
+              }}
+              className="bg-gray-50 dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all"
             >
-              <div className="aspect-video w-full overflow-hidden">
-                <img 
+              <motion.div 
+                className="aspect-video w-full overflow-hidden relative"
+                whileHover="hover"
+              >
+                <motion.img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover object-center"
+                  variants={{
+                    hover: { 
+                      scale: 1.05,
+                      transition: { duration: 0.4, ease: "easeOut" }
+                    }
+                  }}
                 />
-              </div>
+                <motion.div 
+                  className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0"
+                  variants={{
+                    hover: { 
+                      opacity: 1,
+                      transition: { duration: 0.3 }
+                    }
+                  }}
+                />
+                <motion.div 
+                  className="absolute bottom-4 left-4 right-4 text-white font-medium text-sm opacity-0 translate-y-4"
+                  variants={{
+                    hover: { 
+                      opacity: 1,
+                      translateY: 0,
+                      transition: { duration: 0.3, delay: 0.1 }
+                    }
+                  }}
+                >
+                  <div className="flex items-center gap-2">
+                    <ExternalLink className="w-4 h-4" />
+                    <span>View project details</span>
+                  </div>
+                </motion.div>
+              </motion.div>
               
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
