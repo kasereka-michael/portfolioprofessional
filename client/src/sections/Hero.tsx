@@ -2,14 +2,15 @@ import { FaGithub, FaLinkedin, FaTwitter, FaChevronDown } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import TypingEffect from "@/components/TypingEffect";
 import { motion } from "framer-motion";
+import { profile } from "console";
+import profileImage from "@/assets/images/michael.jpg";
 
 const Hero = () => {
   const specializations = [
     "Full Stack Development",
     "React.js",
-    "Node.js",
-    "Java Spring Boot",
-    "Cloud Architecture"
+    "System Administration",
+    "Spring Boot",
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -36,13 +37,13 @@ const Hero = () => {
           className="lg:w-1/2 flex flex-col items-start space-y-6"
         >
           <span className="text-sm font-semibold px-3 py-1 bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary rounded-full">
-            Software Engineer
+            Backend Developer
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Hi, I'm <span className="text-primary dark:text-primary">John Doe</span>
+            Hi, I'm <span className="text-primary dark:text-primary">Michael Kasereka</span>
           </h1>
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 font-light max-w-xl">
-            I build exceptional and accessible digital experiences for the web.
+            I build clean, maintainable, and highly optimized Spring Boot backend applications that are exceptional and scalable for the web.
           </p>
           <p className="text-gray-600 dark:text-gray-400 max-w-xl">
             Specialized in{" "}
@@ -81,7 +82,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center space-x-5 pt-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/kasereka-michael" 
               target="_blank" 
               rel="noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" 
@@ -119,7 +120,7 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-500 rounded-full blur-3xl opacity-20 dark:opacity-30 animate-pulse" style={{ animationDuration: '4s' }}></div>
             <img 
-              src="https://images.unsplash.com/photo-1596075780750-81249df16d19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              src={profileImage} 
               alt="John Doe" 
               className="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl"
             />

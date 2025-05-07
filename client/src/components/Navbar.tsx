@@ -61,7 +61,7 @@ const Navbar = () => {
           }}
           className="text-xl md:text-2xl font-bold text-primary"
         >
-          <span>&lt;</span>JohnDoe<span>/&gt;</span>
+          <span>&lt;</span>MichaelK<span>/&gt;</span>
         </a>
 
         <div className="flex items-center gap-4">

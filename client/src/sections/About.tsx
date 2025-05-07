@@ -20,14 +20,14 @@ const About = () => {
       title: "Education",
       details: [
         "BSc in Computer Science",
-        "University of Technology"
+        "Adventist University of Central Africa, 2025",
       ]
     },
     {
       icon: <FaMapMarkerAlt className="text-primary dark:text-primary" />,
       title: "Location",
       details: [
-        "San Francisco, CA",
+        "Uganda, Africa",
         "Available for remote work"
       ]
     },
@@ -35,16 +35,17 @@ const About = () => {
       icon: <FaCode className="text-primary dark:text-primary" />,
       title: "Interests",
       details: [
-        "Web Development, AI/ML",
-        "Cloud Computing, Open Source"
+        "Web Development, System Administration",
+        "Computer Networking, IT support",
       ]
     },
     {
       icon: <FaLanguage className="text-primary dark:text-primary" />,
       title: "Languages",
       details: [
-        "English (Native)",
-        "Spanish (Conversational)"
+        "English ((Conversational) & writing )",
+        "French ((Conversational) & writing )",
+        "Swahili (speaking & writing )"
       ]
     }
   ];
@@ -73,7 +74,7 @@ const About = () => {
           >
             <img 
               src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-              alt="John working" 
+              alt="kasereka michael" 
               className="w-full h-auto rounded-lg shadow-xl"
             />
           </motion.div>
@@ -85,16 +86,15 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="lg:w-3/5"
           >
-            <h3 className="text-2xl font-bold mb-4">Software Engineer & Problem Solver</h3>
+            <h3 className="text-2xl font-bold mb-4">Backend developer & Problem Solver</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              I'm a passionate software engineer with 5+ years of experience building web applications 
+              I'm a passionate professional software engineer with 2+ years of experience building web applications 
               and solving complex problems. My journey in tech started with a Computer Science degree, 
               and I've been hooked on creating elegant solutions ever since.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
-              I specialize in full-stack development with a focus on performance optimization and 
-              intuitive user interfaces. When I'm not coding, you'll find me hiking, reading sci-fi novels,
-              or contributing to open-source projects.
+              I'm specialized in back-end development with a focus on performance optimization and 
+              scalability When I'm not coding, you can find me exploring new technologies.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

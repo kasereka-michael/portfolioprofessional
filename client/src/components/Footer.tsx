@@ -27,7 +27,7 @@ const Footer = () => {
               }}
               className="text-2xl font-bold text-white"
             >
-              <span>&lt;</span>JohnDoe<span>/&gt;</span>
+              <span>&lt;</span>MichaelK.<span>/&gt;</span>
             </a>
             <p className="mt-2 text-gray-400 max-w-md">
               Building exceptional software solutions for complex problems.
@@ -74,7 +74,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:john.doe@example.com" className="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <a href="mailto:kaserekamichael23526@gmail.com" className="text-gray-400 hover:text-white transition-colors flex items-center">
                     <FaEnvelope className="mr-2" /> Email
                   </a>
                 </li>
@@ -85,7 +85,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} John Doe. All rights reserved.
+            &copy; {currentYear} Michael kasereka. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm mr-4">Privacy Policy</a>

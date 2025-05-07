@@ -4,7 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/data/portfolio";
 
-type ProjectCategory = "all" | "react" | "node" | "python" | "java";
+type ProjectCategory = "all" | "react" | "node" | "python" | "java" | "spring" | "rectNative";
 
 const Projects = () => {
   const { projects } = portfolioData;
@@ -14,7 +14,7 @@ const Projects = () => {
     ? projects 
     : projects.filter(project => project.categories.includes(filter));
 
-  const categories: ProjectCategory[] = ["all", "react", "node", "python", "java"];
+  const categories: ProjectCategory[] = ["all", "react", "node", "python", "java","rectNative", "spring"];
 
   return (
     <section className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300 ease-in-out">
