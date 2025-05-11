@@ -1,5 +1,8 @@
 import almaak from "@/assets/images/almaak.jpg";
 import esyonyimbo from "@/assets/images/esyonyimbo sya kristo.png";
+import pneumonia from "@/assets/images/pneumonia.png";
+import onehealth from "@/assets/images/onehealth.png";
+import eyano from "@/assets/images/eyano.png";
 
 export const portfolioData = {
   user: {
@@ -80,7 +83,7 @@ export const portfolioData = {
     },
     {
       id: 3,
-      title: "Financial Management System",
+      title: "Equipment calibration and management system",
       description: "An enterprise application for managing budgets, expenses, and financial reporting.",
       image: "https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       github: "https://github.com",
@@ -96,158 +99,180 @@ export const portfolioData = {
     },
     {
       id: 4,
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      title: "EyanoServices WebSite",
+      description: "A web application to expose the services of Eyanoservices, a company based in Durba, DRC.",
+      image: eyano,
       github: "https://github.com",
       demo: "https://demo.com",
       featured: false,
-      categories: ["node", "react"],
+      categories: ["Html"],
       technologies: [
-        { name: "React", colorClasses: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
-        { name: "Node.js", colorClasses: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
-        { name: "Socket.io", colorClasses: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200" },
-        { name: "MongoDB", colorClasses: "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200" },
+        { name: "html", colorClasses: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
+        { name: "javascript", colorClasses: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
+        { name: "amchart.js", colorClasses: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200" },
+        { name: "FormSpree", colorClasses: "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200" },
       ],
     },
     {
       id: 5,
-      title: "Data Visualization Dashboard",
-      description: "An interactive dashboard for analyzing and visualizing complex datasets with customizable charts.",
-      image: "https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      title: "One health Sentinel",
+      description: "A web application for monitoring and managing health data using Spring boot and thymleaf.",
+      image: onehealth,
+      github: "https://github.com",
+      demo: "https://demo.com",
+      featured: false,
+      categories: ["spring"],
+      technologies: [
+        { name: "Spring boot", colorClasses: "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200" },
+        { name: "Thymleaf", colorClasses: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
+        { name: "amchart.js", colorClasses: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200" },
+        // { name: "", colorClasses: "bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200" },
+      ],
+    },
+    {
+      id: 6,
+      title: "Pneumonia Detection System",
+      description: "A machine learning model for detecting pneumonia from chest X-ray images using TensorFlow.",
+      image: pneumonia,
       github: "https://github.com",
       demo: "https://demo.com",
       featured: false,
       categories: ["python"],
       technologies: [
-        { name: "Python", colorClasses: "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200" },
-        { name: "Flask", colorClasses: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
-        { name: "D3.js", colorClasses: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200" },
-        { name: "Pandas", colorClasses: "bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200" },
-      ],
-    },
-    {
-      id: 6,
-      title: "Healthcare Management System",
-      description: "A secure platform for managing patient records, appointments, and medical staff scheduling.",
-      image: "https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      github: "https://github.com",
-      demo: "https://demo.com",
-      featured: false,
-      categories: ["react", "java"],
-      technologies: [
-        { name: "React", colorClasses: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
-        { name: "Java", colorClasses: "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200" },
-        { name: "Spring Boot", colorClasses: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
-        { name: "OAuth2", colorClasses: "bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-200" },
+        { name: "Python", colorClasses: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200" },
+        { name: "Django", colorClasses: "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200" },
+        { name: "Pandas", colorClasses: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200" },
+        // { name: "OAuth2", colorClasses: "bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-200" },
       ],
     },
   ],
   experiences: [
     {
-      title: "Senior Software Engineer",
-      company: "TechCorp Inc.",
-      period: "2021 - Present",
-      description: "Led a team of 5 developers in building a scalable e-commerce platform using React, Node.js, and AWS.",
-      achievements: [
-        "Increased site performance by 40% through code optimization",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Mentored junior developers and conducted code reviews",
-      ],
+      "title": "Mobile Application Developer",
+      "company": "Eshyo Nyimbo Sya Kristo",
+      "period": "January 2021 – Present",
+      "description": "Designed and developed a mobile application 'Eshyo Nyimbo Sya Kristo' with over 10,000 active users using Java and React Native.",
+      "achievements": [
+        "Built a scalable and user-friendly app serving over 10,000 users",
+        "Integrated database connectivity and optimized performance",
+        "Maintained and updated the app regularly based on user feedback"
+      ]
     },
     {
-      title: "Full Stack Developer",
-      company: "InnovateSoft",
-      period: "2018 - 2021",
-      description: "Developed and maintained multiple client projects using Java Spring Boot and React.",
-      achievements: [
-        "Built RESTful APIs for financial services applications",
-        "Implemented secure authentication using OAuth 2.0",
-        "Collaborated with UX/UI designers to improve user experience",
-      ],
+      "title": "Mobile Application Developer",
+      "company": "Independent Project – Bible in Yira",
+      "period": "2023 (Personal Project)",
+      "description": "Developed a mobile Bible application using React Native and Expo for the Yira-speaking community.",
+      "achievements": [
+        "Used Expo and React Native for cross-platform compatibility",
+        "Designed a clean and intuitive UI for scripture reading",
+        "Enabled offline reading and basic navigation features"
+      ]
     },
     {
-      title: "Junior Developer",
-      company: "StartUp Labs",
-      period: "2016 - 2018",
-      description: "Started my career developing Python applications and learning web development fundamentals.",
-      achievements: [
-        "Created data processing scripts using Python and Pandas",
-        "Assisted in building a Flask-based web application",
-        "Participated in Agile development processes",
-      ],
+      "title": "IT Support Specialist",
+      "company": "Eyanoservices",
+      "period": "February 2024 – Present",
+      "description": "Provide technical support and maintain IT infrastructure for a company in Durba, DRC.",
+      "achievements": [
+        "Troubleshoot hardware, software, and network issues",
+        "Maintain servers and databases with basic security practices",
+        "Coordinate system updates and incident resolution with the IT team"
+      ]
     },
-  ],
+    {
+      "title": "IT Support Specialist",
+      "company": "Almaakcorp",
+      "period": "February 2024 – Present",
+      "description": "Support IT infrastructure and conduct training at Almaakcorp in Durba, Congo.",
+      "achievements": [
+        "Manage user access and basic database maintenance",
+        "Perform system checks and regular backups",
+        "Train employees on IT tools to boost productivity"
+      ]
+    },
+    {
+      "title": "Software Development Intern",
+      "company": "ASOM - Adventist School of Medicine",
+      "period": "June 2023 – January 2024",
+      "description": "Adding new features and improve the design of Asom amanagement system in Kigali, Rwanda.",
+      "achievements": [
+        "Implemention of notification system for students and staff",
+        "redesign the user interface for better usability",
+        "Optimize database queries for faster data retrieval",
+      ]
+    }
+    ],
   education: [
     {
       degree: "BSc Computer Science",
-      institution: "University of Technology",
-      years: "2012 - 2016",
-      description: "Graduated with honors. Focused on software engineering and data structures.",
+      institution: "Adventist University of Central Africa",
+      years: "2020 - 2025",
+      description: "Graduated with honors. Focused on software engineering.",
     },
     {
-      degree: "AWS Certified Solutions Architect",
-      institution: "Amazon Web Services",
-      years: "2020",
-      description: "Expertise in designing distributed systems and deploying applications on AWS infrastructure.",
+      degree: "Linux System Administration",
+      institution: "Cisco Networking Academy",
+      years: "2023",
+      description: "Expertise in System Administration, configuring Webserver and deploying Web applications",
     },
     {
-      degree: "Full Stack Web Development",
-      institution: "Tech Academy",
-      years: "2018",
-      description: "Intensive program covering modern JavaScript frameworks, APIs, and backend technologies.",
+      degree: "Java Programmer",
+      institution: "Pipple Institute",
+      years: "2022",
+      description: "Intensive program covering modern Java frameworks, APIs, and backend Technics.",
     },
   ],
   blogs: [
-    {
-      title: "Building Scalable React Applications",
-      excerpt: "Best practices for structuring large-scale React applications to maintain code quality and developer productivity.",
-      date: "2023-06-12",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      category: {
-        name: "React",
-        colorClass: "bg-primary",
-      },
-    },
-    {
-      title: "Microservices vs Monoliths: Making the Right Choice",
-      excerpt: "A practical guide to choosing between microservices and monolithic architectures for your next project.",
-      date: "2023-05-24",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      category: {
-        name: "Architecture",
-        colorClass: "bg-green-500",
-      },
-    },
-    {
-      title: "Machine Learning for Web Developers",
-      excerpt: "How to integrate machine learning capabilities into your web applications using TensorFlow.js.",
-      date: "2023-04-10",
-      image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      category: {
-        name: "AI & ML",
-        colorClass: "bg-purple-500",
-      },
-    },
+    // {
+    //   title: "Building Scalable React Applications",
+    //   excerpt: "Best practices for structuring large-scale React applications to maintain code quality and developer productivity.",
+    //   date: "2023-06-12",
+    //   image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    //   category: {
+    //     name: "React",
+    //     colorClass: "bg-primary",
+    //   },
+    // },
+    // {
+    //   title: "Microservices vs Monoliths: Making the Right Choice",
+    //   excerpt: "A practical guide to choosing between microservices and monolithic architectures for your next project.",
+    //   date: "2023-05-24",
+    //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    //   category: {
+    //     name: "Architecture",
+    //     colorClass: "bg-green-500",
+    //   },
+    // },
+    // {
+    //   title: "Machine Learning for Web Developers",
+    //   excerpt: "How to integrate machine learning capabilities into your web applications using TensorFlow.js.",
+    //   date: "2023-04-10",
+    //   image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    //   category: {
+    //     name: "AI & ML",
+    //     colorClass: "bg-purple-500",
+    //   },
+    // },
   ],
   testimonials: [
-    {
-      content: "John is an exceptional developer with a keen eye for detail. His ability to translate complex requirements into elegant solutions is remarkable.",
-      name: "Sarah Johnson",
-      position: "CTO at TechInnovate",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      content: "Working with John was a pleasure. He not only delivered exceptional code but also provided valuable insights that improved our product.",
-      name: "Michael Chen",
-      position: "Product Manager at SoftServe",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
-    },
-    {
-      content: "John's technical skills are top-notch, but what truly sets him apart is his ability to communicate complex concepts in simple terms.",
-      name: "Alexandra Rodriguez",
-      position: "CEO at WebFusion",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
-    },
+    // {
+    //   content: "John is an exceptional developer with a keen eye for detail. His ability to translate complex requirements into elegant solutions is remarkable.",
+    //   name: "Sarah Johnson",
+    //   position: "CTO at TechInnovate",
+    //   image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+    // },
+    // {
+    //   content: "Working with John was a pleasure. He not only delivered exceptional code but also provided valuable insights that improved our product.",
+    //   name: "Michael Chen",
+    //   position: "Product Manager at SoftServe",
+    //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+    // },
+    // {
+    //   content: "John's technical skills are top-notch, but what truly sets him apart is his ability to communicate complex concepts in simple terms.",
+    //   name: "Alexandra Rodriguez",
+    //   position: "CEO at WebFusion",
+    //   image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+    // },
   ],
 };

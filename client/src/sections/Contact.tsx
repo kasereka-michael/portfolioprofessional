@@ -245,7 +245,7 @@ const Contact = () => {
                   iconClass="bg-primary/10 dark:bg-primary/20"
                 >
                   <a href="mailto:john.doe@example.com" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
-                    john.doe@example.com
+                    kaserekamichael23526@gmail.com
                   </a>
                 </ContactInfo>
                 
@@ -255,8 +255,8 @@ const Contact = () => {
                   iconClass="bg-green-100 dark:bg-green-900"
                 >
                   <p className="text-gray-600 dark:text-gray-300">
-                    San Francisco, CA<br />
-                    United States
+                    Uganda, Kampala<br/>
+                    Africa
                   </p>
                 </ContactInfo>
                 
