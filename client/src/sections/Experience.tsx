@@ -189,6 +189,15 @@ const Experience = () => {
               description={education[2].description}
               iconClass="bg-purple-100 dark:bg-purple-900"
             />
+<EducationItem 
+              icon={<FaAward className="text-2xl text-purple-500 dark:text-purple-400" />}
+              title={education[3].degree}
+              organization={education[3].institution}
+              year={education[3].years}
+              description={education[3].description}
+              iconClass="bg-purple-100 dark:bg-purple-900"
+            />
+
           </div>
         </motion.div>
       </div>

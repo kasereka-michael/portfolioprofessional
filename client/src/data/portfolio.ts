@@ -28,14 +28,15 @@ export const portfolioData = {
       { name: "Html", level: 90 },
     ],
     frameworks: [
-      { name: "React", level: 80 },
-      { name: "React Native", level: 80 },
-      { name: "Spring Boot", level: 90 },
+      { name: "React", level: 65 },
+      { name: "React Native", level: 65 },
+      { name: "Spring Boot", level: 70 },
     ],
     tools: [
       { name: "Git", level: 90 },
       { name: "Docker", level: 80 },
       { name: "AWS", level: 75 },
+      { name: "Packet tracer", level: 85 },
     ],
     other: [
       "Database Design",
@@ -217,9 +218,15 @@ export const portfolioData = {
       description: "Expertise in System Administration, configuring Webserver and deploying Web applications",
     },
     {
+      degree: "CCNA - Cisco Certified Network Associate",
+      institution: "Cisco Networking Academy",
+      years: "2025",
+      description: "Completed an intensive CCNA Cisco certification program with a focus on networking fundamentals, routing and switching, IP services, security, and network automation. Gained practical, hands-on experience and successfully earned the CCNA certification, equipping me to design, manage, and troubleshoot modern network infrastructures.",
+    },
+    {
       degree: "Java Programmer",
       institution: "Pipple Institute",
-      years: "2022",
+      years: "2024",
       description: "Intensive program covering modern Java frameworks, APIs, and backend Technics.",
     },
   ],
